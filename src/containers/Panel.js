@@ -32,6 +32,7 @@ const mapStateToProps = (state) => {
   }
 }
 
+//bindActionCreators(actionCreators, dispatch)可將函數中的兩者綁定，讓程式更佳簡潔，可以用react-redux的connect取代
 const mapDispatchToProps = (dispatch) => {
   return {
     counterAction: bindActionCreators(counterAction, dispatch)
